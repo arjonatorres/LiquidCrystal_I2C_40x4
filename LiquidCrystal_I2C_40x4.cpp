@@ -113,16 +113,16 @@ void LiquidCrystal_I2C_40x4::begin(uint8_t cols, uint8_t lines, uint8_t dotsize)
 void LiquidCrystal_I2C_40x4::clear(){
 	_LCDsel = 1;
 	command(LCD_CLEARDISPLAY);// clear display, set cursor position to zero
-	delayMicroseconds(2000);  // this command takes a long time!
+	delayMicroseconds(3000);  // this command takes a long time!
 	_LCDsel = 2;
 	command(LCD_CLEARDISPLAY);// clear display, set cursor position to zero
-	delayMicroseconds(2000);  // this command takes a long time!
+	delayMicroseconds(3000);  // this command takes a long time!
 }
 
 void LiquidCrystal_I2C_40x4::home(){
 	_LCDsel = 1;
 	command(LCD_RETURNHOME);  // set cursor position to zero
-	delayMicroseconds(2000);  // this command takes a long time!
+	delayMicroseconds(3000);  // this command takes a long time!
 }
 
 void LiquidCrystal_I2C_40x4::setCursor(uint8_t col, uint8_t row){
